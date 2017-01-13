@@ -1,3 +1,3 @@
-golang源码分析阅读
+golang源码分析阅读（golang 1.5源码剖析 from 雨痕）
 - 主要是集中在golang的runtime部分，不过汇编还是问题...
 - 内存布局和分配，G/P/M的关系，channel
