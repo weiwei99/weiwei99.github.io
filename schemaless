@@ -1,0 +1,11 @@
+https://eng.uber.com/schemaless-part-three/
+
+uber用来处理trip信息的数据库
+
+整体先从数据模型入手，说清楚怎么用的，其次是整体架构，最后是一些实现细节
+
+首先是不需要预先定义schema，其次需要有secondary index
+
+buffered write来防止async 丢失数据
+
+trigger是基于框架实现的，框架会去poll id的变化 ，通过shard来提高并发度
