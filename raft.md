@@ -10,4 +10,7 @@ mvcc实现：
 
 
 EtcdServer) run是主循环
+
 raftReadyHandler来解耦了上层存储逻辑和底层raft同步
+
+针对bolt的特点，本身etcd并不能处理大的数据量
