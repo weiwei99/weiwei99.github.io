@@ -7,3 +7,7 @@ http://www.infoq.com/cn/articles/etcd-interpretation-application-scenario-implem
 mvcc实现：
 * 内存中B+树   key-> revisions
 * 对应的backend是磁盘上的bolt，bolt里存的是revisions -> serilized(k,v),bolt本身是B+树实现的kv，支持range操作
+
+
+EtcdServer) run是主循环
+raftReadyHandler来解耦了上层存储逻辑和底层raft同步
